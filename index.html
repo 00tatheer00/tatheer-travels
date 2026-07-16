@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatheer Tours & Travels | Premium Curated Journeys & Vacation Packages</title>
+    <meta name="description" content="Discover breathtaking destinations, personalized travel itineraries, and world-class guided tours with Tatheer Tours and Travels. Plan your dream vacation today!">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- --- HEADER --- -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="headerLogo">
+                <i class="fas fa-route"></i> Tatheer <span>Tours & Travels</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li><a href="#planner" class="nav-link">Trip Planner</a></li>
+                    <li><a href="#testimonials" class="nav-link">Stories</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#destinations" class="btn btn-primary btn-sm">Explore Tours</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- HERO SECTION --- -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="assets/hero-bg.png" alt="Majestic scenic mountain background">
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-compass"></i> Let's explore the world together
+            </div>
+            <h1 class="hero-title">Discover The World's <span>Most Beautiful</span> Secrets</h1>
+            <p class="hero-description">Experience premium curated journeys, expert local guides, and bespoke vacation itineraries tailored exactly to your travel vibe.</p>
+            <div class="hero-cta">
+                <a href="#destinations" class="btn btn-primary">Find Your Escape</a>
+                <a href="#planner" class="btn btn-secondary">Plan Custom Trip</a>
+            </div>
+
+            <!-- Floating Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">15K+</span>
+                    <span class="stat-label">Happy Travelers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">150+</span>
+                    <span class="stat-label">Destinations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">4.9</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- QUICK SEARCH WIDGET --- -->
+    <div class="quick-search">
+        <form class="search-box-wrapper" id="quickSearchForm">
+            <div class="search-field">
+                <label for="searchDest">Where To?</label>
+                <div class="search-input-wrapper">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="searchDest" placeholder="Enter destination..." required>
+                </div>
+            </div>
+            
+            <div class="search-field">
+                <label for="searchType">Tour Type</label>
+                <div class="search-input-wrapper">
+                    <i class="fas fa-hiking"></i>
+                    <select id="searchType">
+                        <option value="all">All Categories</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="beaches">Beaches & Islands</option>
+                        <option value="cultural">Historical & Cultural</option>
+                        <option value="mountains">Alpine & Mountains</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-field">
+                <label for="searchDate">When?</label>
+                <div class="search-input-wrapper">
+                    <i class="far fa-calendar-alt"></i>
+                    <input type="month" id="searchDate" value="2026-08">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary quick-search-btn">
+                <i class="fas fa-search"></i> Search Tours
+            </button>
+        </form>
+    </div>
+
+    <!-- --- SERVICES SECTION --- -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Why Choose Tatheer</span>
+                <h2 class="section-title">We Craft Unrivaled Experiences</h2>
+                <p class="section-description">We go beyond traditional sightseeing tours. We curate immersive encounters, private access, and comfortable luxury stay experiences.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="service-title">Bespoke Itineraries</h3>
+                    <p class="service-desc">Tailor-made schedules crafted specifically around your tastes, pace, and accommodation preferences.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="service-title">Expert Local Guides</h3>
+                    <p class="service-desc">Travel alongside licensed storytellers, naturalists, and historians who bring every culture and landscape to life.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="service-title">Unbeatable Pricing</h3>
+                    <p class="service-desc">Direct relationships with top local hotels and flight partners ensure high-fidelity travel at competitive price points.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">24/7 Concierge Care</h3>
+                    <p class="service-desc">Our dedicated logistics support coordinators are on hand at every leg of your travel to assist you in real time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- POPULAR DESTINATIONS SECTION --- -->
+    <section class="destinations section-padding" id="destinations">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Featured Gateways</span>
+                <h2 class="section-title">Our Popular Tour Packages</h2>
+                <p class="section-description">Handpicked packages combining comfortable luxury transport, premium stays, and guided scenic exploration.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="beaches">Beaches</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="destinations-grid">
+                <!-- Hunza -->
+                <div class="destination-card" data-category="mountains">
+                    <div class="card-img-wrapper">
+                        <img src="assets/dest-hunza.png" alt="Hunza Valley Mountain Peaks">
+                        <span class="card-tag">Mountains</span>
+                        <div class="card-price">$850 <span>/person</span></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 7 Days</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.9 (120)</span>
+                        </div>
+                        <h3 class="card-title">Hunza Valley Expedition</h3>
+                        <p class="card-desc">Witness towering peaks, historical forts, suspension bridges, and turquoise waters of Attabad Lake.</p>
+                        <div class="card-footer">
+                            <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Pakistan</span>
+                            <button class="btn btn-text explore-btn" data-id="hunza">Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maldives -->
+                <div class="destination-card" data-category="beaches">
+                    <div class="card-img-wrapper">
+                        <img src="assets/dest-maldives.png" alt="Maldives Overwater Bungalows">
+                        <span class="card-tag">Beaches</span>
+                        <div class="card-price">$1,890 <span>/person</span></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 5 Days</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.8 (85)</span>
+                        </div>
+                        <h3 class="card-title">Maldives Luxury Escape</h3>
+                        <p class="card-desc">Indulge in overwater bungalows, vibrant coral reef snorkeling, and romantic sunset cruises.</p>
+                        <div class="card-footer">
+                            <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Maldives</span>
+                            <button class="btn btn-text explore-btn" data-id="maldives">Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiss Alps -->
+                <div class="destination-card" data-category="mountains">
+                    <div class="card-img-wrapper">
+                        <img src="assets/dest-swiss.png" alt="Swiss Alps Wooden Cabin">
+                        <span class="card-tag">Mountains</span>
+                        <div class="card-price">$1,450 <span>/person</span></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 6 Days</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.7 (94)</span>
+                        </div>
+                        <h3 class="card-title">Swiss Winter Wonderland</h3>
+                        <p class="card-desc">Ski alpine trails under the Matterhorn, ride scenic trains, and unwind in luxurious heated chalets.</p>
+                        <div class="card-footer">
+                            <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Switzerland</span>
+                            <button class="btn btn-text explore-btn" data-id="swiss">Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Santorini -->
+                <div class="destination-card" data-category="beaches">
+                    <div class="card-img-wrapper">
+                        <img src="assets/dest-santorini.png" alt="Santorini Golden Sunset View">
+                        <span class="card-tag">Beaches</span>
+                        <div class="card-price">$1,200 <span>/person</span></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 5 Days</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.9 (110)</span>
+                        </div>
+                        <h3 class="card-title">Santorini Sunset Odyssey</h3>
+                        <p class="card-desc">Explore beautiful whitewashed towns, relaxing volcanic beaches, and sail the Aegean caldera.</p>
+                        <div class="card-footer">
+                            <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Greece</span>
+                            <button class="btn btn-text explore-btn" data-id="santorini">Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cappadocia -->
+                <div class="destination-card" data-category="adventure">
+                    <div class="card-img-wrapper">
+                        <img src="assets/dest-cappadocia.png" alt="Cappadocia Hot Air Balloons">
+                        <span class="card-tag">Adventure</span>
+                        <div class="card-price">$980 <span>/person</span></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 4 Days</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.8 (210)</span>
+                        </div>
+                        <h3 class="card-title">Cappadocia Ballooning</h3>
+                        <p class="card-desc">Soar above ancient rock formations in a hot air balloon, and stay in prehistoric luxury cave hotels.</p>
+                        <div class="card-footer">
+                            <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Turkey</span>
+                            <button class="btn btn-text explore-btn" data-id="cappadocia">Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kyoto -->
+                <div class="destination-card" data-category="cultural">
+                    <div class="card-img-wrapper">
+                        <img src="assets/dest-kyoto.png" alt="Kyoto Pagoda and Cherry Blossoms">
+                        <span class="card-tag">Cultural</span>
+                        <div class="card-price">$1,150 <span>/person</span></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 6 Days</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.7 (140)</span>
+                        </div>
+                        <h3 class="card-title">Kyoto Heritage Explorer</h3>
+                        <p class="card-desc">Visit centuries-old bamboo paths, gold-gilded shrines, and take part in peaceful Zen ceremonies.</p>
+                        <div class="card-footer">
+                            <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Japan</span>
+                            <button class="btn btn-text explore-btn" data-id="kyoto">Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- INTERACTIVE TRAVEL PLANNER SECTION --- -->
+    <section class="planner section-padding" id="planner">
+        <div class="container planner-container">
+            <div class="planner-text">
+                <span class="section-subtitle">Intelligent Recommendations</span>
+                <h2 class="section-title">Design Your Perfect Holiday</h2>
+                <p>Not sure where to head next? Use our smart travel generator widget. Give us a few parameters, and we will immediately calculate the ideal match for your vibe.</p>
+                
+                <div class="planner-steps">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h4>Pick Your Core Vibe</h4>
+                            <p>Tell us if you desire steep mountains, warm beach sands, adrenaline adventure, or historical heritage.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h4>Set Duration & Budget</h4>
+                            <p>Choose your duration length and spending style so we customize package inclusions.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h4>Get Custom Recommendation</h4>
+                            <p>View detailed matching itineraries and directly trigger booking inquiries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planner Card -->
+            <div class="planner-card">
+                <form class="planner-form" id="plannerForm">
+                    <div class="form-group">
+                        <label for="vibe">Core Vibe</label>
+                        <select id="vibe">
+                            <option value="mountains">Alpine Mountains & Glaciers</option>
+                            <option value="beaches">Beaches & Private Islands</option>
+                            <option value="adventure">Adrenaline & Active Exploration</option>
+                            <option value="cultural">History, Gardens & Shrines</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="duration">Duration</label>
+                            <select id="duration">
+                                <option value="short">4 - 5 Days</option>
+                                <option value="medium">6 - 7 Days</option>
+                                <option value="long">8+ Days</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Level</label>
+                            <select id="budget">
+                                <option value="budget">Comfort Economy</option>
+                                <option value="mid-range">Premium Select</option>
+                                <option value="luxury">Ultra Luxury Concierge</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">
+                        <i class="fas fa-magic"></i> Calculate Best Match
+                    </button>
+                </form>
+
+                <!-- Recommendation Result -->
+                <div class="planner-result" id="plannerResult">
+                    <div class="result-title">Our Recommended Match: <span id="resultTourName"></span></div>
+                    <p class="result-desc" id="resultReason"></p>
+                    <button class="btn btn-primary btn-sm" id="viewResultBtn" data-id="">
+                        View Tour Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- TESTIMONIALS SECTION --- -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Client Reviews</span>
+                <h2 class="section-title">Stories From The Road</h2>
+                <p class="section-description">Real travel testimonials shared by happy explorers after returning from their adventures.</p>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Our Hunza Valley expedition organized by Tatheer Tours was nothing short of miraculous. The driver was highly professional, and our private guide had incredible depth of knowledge about the Altit Fort's heritage."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="traveler-info">
+                            <img class="traveler-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sarah Jenkins">
+                            <div class="traveler-details">
+                                <div class="traveler-name">Sarah Jenkins</div>
+                                <div class="traveler-title">Travel Writer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"The Maldives overwater water villa retreat was pure bliss. Seamless airport transfers and reservations made at the underwater dining hall. The team went out of their way to customize our sunset picnic."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="traveler-info">
+                            <img class="traveler-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="David Warner">
+                            <div class="traveler-details">
+                                <div class="traveler-name">David Warner</div>
+                                <div class="traveler-title">Adventure Vlogger</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Kyoto was mesmerizing, but having Tatheer arrange our private Tea Ceremony master made it deeply unforgettable. Everything was on-point, clear documentation, and wonderful guides."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="traveler-info">
+                            <img class="traveler-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Amara Patel">
+                            <div class="traveler-details">
+                                <div class="traveler-name">Amara Patel</div>
+                                <div class="traveler-title">Creative Director</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevSlide" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="nextSlide" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- CALL TO ACTION & NEWSLETTER --- -->
+    <section class="cta-section section-padding" id="contact">
+        <div class="cta-bg">
+            <img src="assets/hero-bg.png" alt="A beautiful scenic sky">
+        </div>
+        <div class="container cta-container">
+            <h2>Ready to Start Your Adventure?</h2>
+            <p>Join our newsletter list today and receive an immediate $100 travel credit voucher toward any of our popular international packages, plus weekly off-beat locations updates.</p>
+            
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Your email address" aria-label="Newsletter email input" required>
+                <button type="submit" class="btn btn-primary">Subscribe & Claim Credit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Column -->
+                <div class="footer-info">
+                    <a href="#" class="logo">
+                        <i class="fas fa-route"></i> Tatheer <span>Tours</span>
+                    </a>
+                    <p class="footer-desc">Crafting premium, bespoke tours and luxury adventures for wanderers who seek the rare, the authentic, and the unforgettable across the globe.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube Link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home Base</a></li>
+                        <li><a href="#services">Our Core Services</a></li>
+                        <li><a href="#destinations">Tour Packages</a></li>
+                        <li><a href="#planner">Dynamic Matcher</a></li>
+                        <li><a href="#testimonials">Client Stories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Alpine mountains</a></li>
+                        <li><a href="#destinations">Sand beaches</a></li>
+                        <li><a href="#destinations">Adrenaline adventures</a></li>
+                        <li><a href="#destinations">Culture excursions</a></li>
+                        <li><a href="#destinations">Private family tours</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Reach Us</h3>
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+92 300 1234567<br>+92 321 9876543</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@tatheertours.com<br>support@tatheertours.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Office #45, Silver Heights Plaza, Main Expressway, Islamabad, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tatheer Tours and Travels. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- INTERACTIVE TOUR DETAILS MODAL --- -->
+    <div class="modal" id="tourModal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close details modal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-hero">
+                <img id="modalImg" src="" alt="">
+                <div class="modal-header-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-meta">
+                        <span id="modalLocation"></span>
+                        <span id="modalDuration"></span>
+                        <span id="modalRating"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <!-- Main details -->
+                <div class="modal-main">
+                    <h3 class="modal-section-title">Trip Overview</h3>
+                    <p class="modal-description" id="modalDesc"></p>
+                    
+                    <h3 class="modal-section-title">Day-by-Day Itinerary</h3>
+                    <div class="itinerary-list" id="modalItinerary">
+                        <!-- Dynamic Day cards -->
+                    </div>
+                </div>
+
+                <!-- Sidebar booking -->
+                <div class="modal-sidebar">
+                    <div class="sidebar-price-label">Price per Traveler</div>
+                    <div class="sidebar-price" id="modalPrice"></div>
+                    
+                    <h3 class="modal-section-title" style="font-size:1.1rem;">Book This Tour</h3>
+                    <form class="modal-booking-form" id="bookingForm">
+                        <input type="hidden" id="bookingTourName">
+                        <input type="text" id="bookingName" placeholder="Your Full Name" required>
+                        <input type="email" id="bookingEmail" placeholder="Your Email Address" required>
+                        <input type="tel" placeholder="Your Phone Number" required>
+                        <input type="date" required>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">
+                            <i class="far fa-paper-plane"></i> Send Reservation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
