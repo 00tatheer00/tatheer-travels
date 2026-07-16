@@ -1,3 +1,11 @@
+// --- PRELOADER REMOVAL SYSTEM ---
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        preloader.classList.add("fade-out");
+    }
+});
+
 // --- DESTINATIONS DATA SYSTEM ---
 const tourPackages = {
     hunza: {
